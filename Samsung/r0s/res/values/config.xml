@@ -210,4 +210,9 @@
          in darkness (although they may not be visible in a bright room). -->
 	<integer name="config_screenBrightnessDark">1</integer>
 	
+	<!-- Set a minimum and maximum when it comes to refresh rate for Adaptive Refresh Rate to work. -->
+	<integer name="config_defaultRefreshRate">0</integer>
+	<integer name="config_defaultPeakRefreshRate">120</integer>
+	
+	
 </resources>
