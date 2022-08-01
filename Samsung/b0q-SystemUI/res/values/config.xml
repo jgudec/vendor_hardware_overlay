@@ -11,4 +11,10 @@
 	
 	<!-- With the large clock, move up slightly from the center -->
     <dimen name="keyguard_large_clock_top_margin">-176dp</dimen>
+
+	<!-- Preferred refresh rate at keyguard, if supported by the display -->
+    <integer name="config_keyguardRefreshRate">120</integer>
+
+	<!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
+    <integer name="config_aodMaxRefreshRate">10</integer>
 </resources>
