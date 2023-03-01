@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="status_bar_padding_top">24px</dimen>
+	<dimen name="keyguard_carrier_text_margin">68px</dimen>
+	<dimen name="system_icons_keyguard_padding_end">55px</dimen>
+	<dimen name="status_bar_header_height_keyguard">0px</dimen>
+	<dimen name="physical_power_button_center_screen_location_y">1060px</dimen>
+	<dimen name="status_bar_clock_padding_top">26px</dimen>
+	
+	<!-- With the large clock, move up slightly from the center -->
+    <dimen name="keyguard_large_clock_top_margin">-176dp</dimen>
+	
+	<!-- Preferred refresh rate at keyguard, if supported by the display -->
+    <integer name="config_keyguardRefreshRate">120</integer>
+	
+	<!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
+    <integer name="config_aodMaxRefreshRate">10</integer>
+</resources>
