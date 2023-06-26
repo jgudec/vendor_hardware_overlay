@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<dimen name="status_bar_padding_top">24px</dimen>
-	<dimen name="keyguard_carrier_text_margin">68px</dimen>
+	<dimen name="keyguard_carrier_text_margin">50px</dimen>
 	<dimen name="system_icons_keyguard_padding_end">55px</dimen>
 	<dimen name="status_bar_header_height_keyguard">0px</dimen>
+	<dimen name="status_bar_height_default">110px</dimen>
+    <dimen name="status_bar_height">110px</dimen>
+    <dimen name="status_bar_height_portrait">110px</dimen>
 	<dimen name="physical_power_button_center_screen_location_y">1060px</dimen>
-	<dimen name="status_bar_clock_padding_top">26px</dimen>
+	<dimen name="status_bar_clock_padding_top">24px</dimen>
 	
 	<!-- With the large clock, move up slightly from the center -->
-    <dimen name="keyguard_large_clock_top_margin">-176dp</dimen>
+    <dimen name="keyguard_large_clock_top_margin">-130dp</dimen>
+	
+	<bool name="config_fillMainBuiltInDisplayCutout">false</bool>
+
+    <string name="config_mainBuiltInDisplayCutout">_cutout_</string>
+    <string name="config_mainBuiltInDisplayCutoutRectApproximation">@string/config_mainBuiltInDisplayCutout</string>
 	
 	<!-- Preferred refresh rate at keyguard, if supported by the display -->
     <integer name="config_keyguardRefreshRate">120</integer>
