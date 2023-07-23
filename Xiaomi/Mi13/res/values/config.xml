@@ -2,5 +2,54 @@
 <resources>
     <integer name="config_defaultPeakRefreshRate">120</integer>
     <integer name="config_screenBrightnessDoze">2</integer>
-    <integer name="config_screenBrightnessSettingMinimum">1</integer>
+
+    <!-- Amount of time it takes for the light sensor to warm up in milliseconds.
+         For this time after the screen turns on, the Power Manager
+         will not debounce light sensor readings -->
+	<integer name="config_lightSensorWarmupTime">200</integer>
+
+    <!-- Slow brightness animation ramp rate in brightness units per second-->
+	<integer name="config_brightness_ramp_rate_slow">600</integer>
+
+    <!-- Fast brightness animation ramp rate in brightness units per second-->
+	<integer name="config_brightness_ramp_rate_fast">1800</integer>
+
+    <!-- Minimum screen brightness setting allowed by the power manager.
+         The user is forbidden from setting the brightness below this level. -->
+	<integer name="config_screenBrightnessSettingMinimum">1</integer>
+	
+	<!-- Maximum screen brightness setting allowed by the power manager.
+         The user is forbidden from setting the brightness above this level. -->
+	<integer name="config_screenBrightnessSettingMaximum">1300</integer>
+	
+	<!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
+         for debouncing the light sensor.  Different constants are used to debounce the light sensor
+         when adapting to brighter or darker environments.  This parameter controls how quickly
+         brightness changes occur in response to an observed change in light level that exceeds the
+         hysteresis threshold. -->
+	<integer name="config_autoBrightnessBrighteningLightDebounce">800</integer>
+	<integer name="config_autoBrightnessDarkeningLightDebounce">800</integer>
+
+    <!-- User activity timeout: Maximum screen dim duration as a percentage of screen off timeout.
+    
+         This resource is similar to config_maximumScreenDimDuration but the maximum
+         screen dim duration is defined as a ratio of the overall screen off timeout
+         instead of as an absolute value in milliseconds.  This is useful for reducing
+         the dim duration when the screen off timeout is very short.
+    
+         When computing the screen dim duration, the power manager uses the lesser
+         of the effective durations expressed by config_maximumScreenDimDuration and
+         config_maximumScreenDimRatio.
+    
+         This value must be between 0% and 100%.  If the value is zero, the screen will not
+         dim before the device goes to sleep.
+    -->
+	<fraction name="config_maximumScreenDimRatio">29.999996%</fraction>
+
+    <!-- Preferred refresh rate at keyguard, if supported by the display -->
+    <integer name="config_keyguardRefreshRate">120</integer>
+
+    <!-- With the large clock, move up slightly from the center -->
+    <dimen name="keyguard_large_clock_top_margin">-130dp</dimen>
+    
 </resources>
