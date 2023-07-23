@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_mainBuiltInDisplayCutout">M -34,0 L -34,98 L 34,98 L 34,0 Z</string>
+    <string name="config_mainBuiltInDisplayCutoutRectApproximation">M -34,0 L -34,98 L 34,98 L 34,0 Z</string>
+    <dimen name="rounded_corner_radius">22.0dip</dimen>
+    <dimen name="status_bar_height_default">128px</dimen>
+    <dimen name="status_bar_height">128px</dimen>
+    <dimen name="status_bar_height_portrait">128px</dimen>
+    <dimen name="status_bar_height_landscape">28dp</dimen>
+</resources>
