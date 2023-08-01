@@ -322,6 +322,9 @@ PRODUCT_PACKAGES += \
 	treble-overlay-xiaomi-mi13 \
 	treble-overlay-xiaomi-mi13-systemui \
 	treble-overlay-xiaomi-mi13-settings \
+	treble-overlay-xiaomi-mi13pro \
+	treble-overlay-xiaomi-mi13pro-systemui \
+	treble-overlay-xiaomi-mi13pro-settings \
 	treble-overlay-xiaomi-mi6x \
 	treble-overlay-xiaomi-mi8 \
 	treble-overlay-xiaomi-mi8ee \
